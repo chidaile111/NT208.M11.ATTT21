@@ -5,13 +5,18 @@
 
 .header__navbar {
     display:flex;
-    justify-content: space-between;
+    justify-content:center;
 }
 .header__navbar-list{
     list-style: none;
     padding: 8px 0;
 }
-
+.header__navbar-list_1{
+    margin-right: 5%;
+}
+.header__navbar-list_2{
+    margin-left: 5%;
+}
 .header__navbar-item{
     margin: 0 28px;
     position: relative;
