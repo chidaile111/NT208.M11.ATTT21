@@ -1,63 +1,69 @@
+html {
+    height: 100%
+}
+
 body {
     margin: 0;
     overflow: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
 }
 
 
 /* Header bar */
 
 .header {
+    box-sizing: border-box;
     background-color: #0d0d5e;
     height: 50px;
 }
 
 .header .header-name-area {
-    height: 100%;
-    float: left;
     width: 35%;
     display: flex;
     align-items: center;
+    float: left;
+    height: 100%;
 }
 
 .header .header-name {
     font-size: 25px;
     font-weight: 700;
     color: whitesmoke;
-    padding-left: 170px;
+    padding-left: 30%;
 }
 
-.header .header-search {
+.header .header-search-area {
+    width: 44.99%;
+    display: flex;
+    align-items: center;
     height: 100%;
     float: left;
-    width: 44.99%;
-    align-items: center;
-    display: flex;
 }
 
-.header .header-search input[type=text] {
+.header .header-search-area input[type=text] {
     height: 70%;
     width: 70%;
     font-size: 16px;
     background: whitesmoke;
     border-radius: 8px;
     border: none;
-    padding-left: 20px;
+    padding-left: 2.5%;
 }
 
 .header .header-avatar-area {
-    height: 100%;
-    float: left;
     width: 20%;
     display: flex;
     align-items: center;
+    height: 100%;
+    float: left;
 }
 
 .header .header-avatar {
-    width: 38px;
-    height: 38px;
+    height: 80%;
     border-radius: 50%;
-    margin-left: 300px;
+    margin-left: 75%;
 }
 
 
@@ -65,7 +71,7 @@ body {
 
 .main-area {
     /* background-color: rgb(194, 27, 152); */
-    height: 1030px;
+    height: 90%;
 }
 
 
@@ -80,10 +86,10 @@ body {
     border-style: solid;
     border-top: none;
     border-width: 1px;
+    padding-top: 0;
 }
 
 .main-area .navbar .navbar-items {
-    margin-top: -8px;
     list-style-type: none;
     height: 880px;
     background: linear-gradient(to right, white, rgb(199, 199, 199));
@@ -94,7 +100,7 @@ body {
 .main-area .navbar button {
     width: 100%;
     background: linear-gradient(to right, white, rgb(199, 199, 199));
-    height: 70px;
+    height: auto;
     font-size: 14px;
     text-align: center;
     cursor: pointer;
@@ -102,6 +108,7 @@ body {
     border-right: none;
     transition-duration: 0.4s;
     font-weight: 600;
+    padding: 20% 0;
 }
 
 .main-area .navbar button:hover {
@@ -111,7 +118,6 @@ body {
 .main-area .navbar button:active {
     background: gray;
     color: white;
-    border: none;
 }
 
 .main-area .navbar .space {
@@ -125,7 +131,7 @@ body {
     float: left;
     height: 100%;
     width: 1840px;
-    background: linear-gradient(to right, white, rgb(199, 199, 199));
+    background: white;
 }
 
 .workspace-header {
@@ -262,4 +268,24 @@ body {
     border-width: 1px;
     box-sizing: border-box;
     border-style: solid;
+}
+
+.chat-member-area {
+    overflow: auto;
+}
+
+.chat-member-area .member-avatar {
+    float: left;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    border-style: solid;
+    border-width: 1px;
+    background-color: grey;
+    box-sizing: border-box;
+}
+
+.member-avatar img {
+    width: 100%;
+    padding: 25px;
+    border-radius: 50%;
 }
