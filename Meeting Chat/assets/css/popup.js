@@ -1,5 +1,6 @@
 const btn_register = document.querySelector("#btn_register");
 const btn_login = document.querySelector("#btn_login");
+const btn_login_1 = document.querySelector("#btn_login_1");
 const modal = document.querySelector("#modal");
 const register_form = document.querySelector("#register-form");
 const login_form = document.querySelector("#login-form");
@@ -19,6 +20,12 @@ btn_login.onclick = function () {
   modal.style.display = "flex";
   register_form.style.display = "none";
   login_form.style.display = "block";
+};
+
+btn_login_1.onclick = function () {
+    modal.style.display = "flex";
+    register_form.style.display = "none";
+    login_form.style.display = "block";
 };
 
 btn_login_form.onclick = function () {
