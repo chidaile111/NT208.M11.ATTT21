@@ -53,12 +53,12 @@
 
 /* Register/login form */
 
-.auth-form{
+.auth-form {
     width: 500px;
     background-color: var(--white-color);
     border-radius: 4px;
     overflow: hidden;
-}
+  }
 .auth-form__container{
     padding: 0 32px;
 }
@@ -239,4 +239,13 @@ img {
     font-weight: 400;
     letter-spacing: .1px;
     line-height: 28px;
+}
+
+
+.modal {
+    display: none;
+}
+#register-form,
+#login-form {
+display: none;
 }
