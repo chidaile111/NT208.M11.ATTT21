@@ -52,12 +52,21 @@
 }
 
 /* Register/login form */
-
+.modal{
+    display: none;
+}
 .auth-form{
     width: 500px;
     background-color: var(--white-color);
     border-radius: 4px;
     overflow: hidden;
+}
+
+#register_form{
+    display: block;
+}
+#login_form{
+    display: none;
 }
 .auth-form__container{
     padding: 0 32px;
