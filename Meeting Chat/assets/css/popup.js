@@ -10,7 +10,7 @@ const btn_back = document.querySelectorAll(
 );
 
 btn_register.onclick = function () {
-  modal.style.display = "block";
+  modal.style.display = "flex";
   register_form.style.display = "block";
   login_form.style.display = "none";
   btn_back[0].onclick = function () {
@@ -21,7 +21,7 @@ btn_register.onclick = function () {
 };
 
 btn_login.onclick = function () {
-  modal.style.display = "block";
+  modal.style.display = "flex";
   register_form.style.display = "none";
   login_form.style.display = "block";
   btn_back[1].onclick = function () {
