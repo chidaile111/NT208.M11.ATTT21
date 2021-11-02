@@ -34,9 +34,19 @@ btn_login.onclick = function () {
 btn_login_form.onclick = function () {
   register_form.style.display = "none";
   login_form.style.display = "block";
+  btn_back[1].onclick = function () {
+    modal.style.display = "none";
+    register_form.style.display = "none";
+    login_form.style.display = "none";
+  };
 };
 
 btn_register_form.onclick = function () {
   register_form.style.display = "block";
   login_form.style.display = "none";
+  btn_back[0].onclick = function () {
+    modal.style.display = "none";
+    register_form.style.display = "none";
+    login_form.style.display = "none";
+  };
 };
