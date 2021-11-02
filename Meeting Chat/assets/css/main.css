@@ -63,10 +63,10 @@
 }
 
 #register_form{
-    display: block;
+    display: none;
 }
 #login_form{
-    display: none;
+    display: block;
 }
 .auth-form__container{
     padding: 0 32px;
